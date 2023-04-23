@@ -1,7 +1,9 @@
 // Require the necessary discord.js classes
 import { Client, Events, GatewayIntentBits } from 'discord.js';
 import dotenv from 'dotenv';
+import vueInit from '@/core/vue';
 
+vueInit();
 dotenv.config();
 
 // Create a new client instance
