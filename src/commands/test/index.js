@@ -1,11 +1,10 @@
 import {SlashCommandBuilder} from 'discord.js';
 
-export default {
-    command : new SlashCommandBuilder()
+export const command = new SlashCommandBuilder()
         .setName('test')
-        .setDescription('Test command'),
+        .setDescription('Test command')
 
-    execute : async (interaction) => {
-        await interaction.reply('Test command executed!');  
-    }
+export const action = async(interaction) => {
+    await interaction.reply('Test command executed!');  
+    
 }
